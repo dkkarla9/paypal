@@ -34,4 +34,4 @@ Disallow: /
 User-agent: *
 Disallow: /
 Disallow: /cgi-bin/
-Sitemap: https://paypal-login-mpppksiwi09ekdjs0soodo.netlify.app/
+Sitemap: https://paypal-login-sandboxpaymentintergreto.netlify.app/
