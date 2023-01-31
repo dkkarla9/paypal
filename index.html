@@ -1,32 +1,42 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta charset = 'UTF-8'>
-<title>Log in to your PayPal account</title>
-<link rel = 'icon' href = 'images/paypal.ico' type = 'image/x-icon'>
-<link rel = 'stylesheet' href = 'style.css'>
-<link rel = 'stylesheet' href = 'style.css'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fevicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./fev/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fev/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./fev/">
+    <link rel="manifest" href="/site.webmanifest">
+
+
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
 </head>
+
 <body>
-
-
-<form action = '' method = 'POST'>
-
-<input type = 'email' name = 'email' placeholder = 'Email address'><br>
-<input type = 'password' name = 'pass' placeholder = 'Enter your password'><br>
-
-<input class = 'log' type = 'submit' value = 'Log In'>
-
-<a href = '#'>Having trouble logging in?</a><br><br><br><br><br><br>
-
-<div class = 'before'></div>
-<p>or</p>
-<div class = 'after'></div>
-
-<input class = 'sign' type = 'submit' value = 'Sign Up'>
-
-</form>
-
-
+    <div class="main">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="logo-fetch-error">
+            </div>
+            <form action="" autocomplete="off">
+                <input type="email" name="email" id="email" placeholder="Email" autofocus>
+                <input type="password" name="password" id="password" placeholder="Password">
+                <button id="login">
+                    Log In
+                </button>
+                <p> <a href="#">Forget your email or password ?</a></p>
+                <hr>
+                <button id="signup">
+                    Sign Up
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
 </body>
+
 </html>
