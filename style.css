@@ -5,12 +5,12 @@
 	margin: 0;
 	padding: 0;
 }
-
+@media only screen and (min-width: 460px) {
 body {
-	min-height: 100%;
-	color: #2c2e2f;
-	font-family: HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 93.75%;
+min-height: 100%;
+color: #2c2e2f;
+font-family: HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-size: 93.75%;
 }
 
 main {
@@ -100,64 +100,3 @@ main {
 }
 
 .form__container > .forget__cta {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 20px 0 0 0;
-}
-
-.form__container > .forget__cta a {
-	text-decoration: none;
-	color: #0070ba;
-	font-size: 15.3px;
-}
-
-.separator {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 20px 0;
-}
-
-.separator .first,
-.separator .last {
-	width: 100%;
-	border-bottom: 1px solid #2c2e2f2f;
-}
-
-.separator .center span {
-	margin: 10px;
-	color: #2c2e2f;
-	opacity: 0.7;
-}
-
-.btn__signUp {
-	background-color: #e0e6ea;
-	color: #2c2e2f;
-	border: none;
-}
-
-footer {
-	height: 40px;
-	background-color: #f7f9fa;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	display: flex;
-	justify-content: center;
-	align-self: center;
-	padding-top: 14px;
-}
-
-footer a {
-	font-size: 11px;
-	color: #666666;
-	transition: color 0.2s ease-out 0s;
-	text-decoration: none;
-	padding: 0 5px;
-}
-
-footer a:hover {
-	text-decoration: underline solid rgb(102, 102, 102);
-}
