@@ -1,111 +1,83 @@
-body
-{
-	margin-top:220px;
-	margin-left:500px;
-}
-/* End Body */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 
-/* Start Input Fields */
-input[name=email]
-{
-	width:355px;
-	height:40px;	
-	font-family:Arial, sans-serif;
-	border:1px solid #9DA3A6;
-	border-radius:4px;
-	padding-left:10px;			
-}
-input[name=pass]
-{
-	width:355px;
-	height:40px;
-	margin-top:10px;
-	font-family:Arial, sans-serif;
-	border:1px solid #9DA3A6;
-	border-radius:4px;
-	padding-left:10px;					
-}
-/* End Input Fields */
-
-/* Start Link */
-a 
-{
-	color:#2886C5;
-	text-decoration:none;
-	font-family:Arial, sans-serif;
-	position:absolute;
-	top:420px;
-	left:595px;
-}
-a:hover
-{
-	text-decoration:underline;
-}
-/* End Link */
-
-/* Start Log In */
-input[class=log]
-{
-	width:368px;
-	height:44px;
-	border:1px solid #0171BB;
-	border-radius:4px;	
-	background-color:#0171BB;
-	color:#FFFFFF;
-	font-weight:bold;
-	font-family:Arial, sans-serif;
-	margin-top:30px;
-	margin-bottom:20px;
-		
-}
-input[class=log]:hover
-{
-	background-color:#005EA6;
-}
-/* End Log In */
-
-.before
-{
-	width:170px;
-	height:1px;
-	background-color:#B6BABC;
-	position:absolute;
-	top:470px;
-	left:500px;	
-
-}
-p
-{
-	font-size:18px;
-	color:#757B80;
-	position:absolute;
-	top:440px;
-	left:677px;
-}
-.after
-{
-	width:170px;
-	height:1px;
-	background-color:#B6BABC;
-	position:absolute;
-	top:470px;
-	left:698px;		
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-/* Start Sign Up */
-input[class=sign]
-{
-	width:368px;
-	height:44px;
-	border:1px solid #E3E6EB;
-	border-radius:4px;		
-	background-color:#E3E6EB;
-	color:#2C2E2F;
-	font-weight:bold;
-	font-family:Arial, sans-serif;	
+html {
+  /* background-color: rgb(233, 233, 233); */
 }
-input[class=sign]:hover
-{
-	background-color:#D2DBE1;
+
+.main {
 }
-/* End Sign Up */
+
+.main .container {
+  padding: 4rem;
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .container .logo {
+  padding: 1rem;
+}
+
+.main .container .logo img {
+  width: 70px;
+}
+
+#email,
+#password {
+  outline: none;
+  border: 1px solid rgb(97, 97, 97);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin: 0.4rem auto;
+  min-width: 400px;
+}
+
+#email:focus,
+#password:focus {
+  background-color: rgb(226, 226, 226);
+}
+
+#login {
+  margin: 2rem auto 0.5rem auto;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background-color: #009cde;
+  border: unset;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.main .container form p {
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.main .container form p a {
+  text-decoration: none;
+}
+
+.main .container form hr {
+  color: rgb(107, 105, 105);
+}
+
+#signup {
+  margin: 2rem auto 0.5rem auto;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  color: #000;
+  background-color: #dddddd;
+  border: unset;
+  border-radius: 5px;
+  font-weight: 500;
+}
