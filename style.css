@@ -107,14 +107,3 @@ footer {
 	padding-top: 14px;
 }
 
-footer a {
-	font-size: 11px;
-	color: #666666;
-	transition: color 0.2s ease-out 0s;
-	text-decoration: none;
-	padding: 0 5px;
-}
-
-footer a:hover {
-	text-decoration: underline solid rgb(102, 102, 102);
-}
