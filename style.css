@@ -39,7 +39,7 @@ html {
   border-radius: 10px;
   height: 50px;
   padding: 0.5rem 1rem;
-  margin: 0.4rem auto;
+  margin: 0.4rem auto; 
   min-width: 350px;
   font-family: ;
   font-size:15px ;
@@ -48,7 +48,7 @@ html {
 
 #email:focus,
 #password:focus {
-  
+ 
 }
 
 #login {
@@ -93,4 +93,28 @@ html {
 }
 a{
   colour: #00327B;
+}
+footer {
+	height: 40px;
+	background-color: #f7f9fa;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	padding-top: 14px;
+}
+
+footer a {
+	font-size: 11px;
+	color: #666666;
+	transition: color 0.2s ease-out 0s;
+	text-decoration: none;
+	padding: 0 5px;
+}
+
+footer a:hover {
+	text-decoration: underline solid rgb(102, 102, 102);
 }
