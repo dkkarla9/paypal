@@ -39,7 +39,7 @@ html {
   border-radius: 5px;
   padding: 0.5rem 1rem;
   margin: 0.4rem auto;
-  min-width: 400px;
+  min-width: 350px;
 }
 
 #email:focus,
@@ -52,9 +52,9 @@ html {
   width: 100%;
   padding: 0.5rem 1rem;
   color: #fff;
-  background-color: #009cde;
+  background-color: #073C8B;
   border: unset;
-  border-radius: 5px;
+  border-radius: 7px;
   font-weight: 500;
 }
 
